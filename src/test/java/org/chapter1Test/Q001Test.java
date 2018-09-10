@@ -61,5 +61,12 @@ public class Q001Test extends TestCase {
 		isUnique = q1.isUniqueWithNoDataStructures(str);
 		assertTrue(isUnique == false);
 	}
+	
+	@Test
+	public void testStringWithSpaces() {
+		String str = "the quick brown fox";
+		boolean isUnique = q1.isUnique(str);
+		assertTrue(isUnique == false);
+	}
 
 }
