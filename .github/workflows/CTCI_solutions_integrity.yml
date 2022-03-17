@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
@@ -21,5 +19,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Prepare Test environment
+        run: mv ~/CTCI-Python-Playground/CTCI-Python-Playground ~/CTCI
       - name: Run tests with pytest
         run: pytest -v
