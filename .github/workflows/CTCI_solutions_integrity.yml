@@ -1,9 +1,6 @@
 name: CTCI Solutions Integrity Check
 
 on:
-  paths:
-    - 'CTCIPythonPlayground/src/*'
-    - 'CTCIPythonPlayground/test/*'
   push:
     branches: [master, practice, config]
   pull_request:
