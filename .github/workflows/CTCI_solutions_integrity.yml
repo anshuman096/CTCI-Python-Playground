@@ -20,6 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Prepare Test environment
-        run: mv ~/CTCI-Python-Playground/CTCI-Python-Playground ~/CTCI
-      - name: Run tests with pytest
+        run: ls
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Run CTCI test suite
         run: pytest -v
