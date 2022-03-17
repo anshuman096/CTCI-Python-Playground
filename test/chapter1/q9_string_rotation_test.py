@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from CTCI.src.chapter1.q9_string_rotation import isRotated
+from CTCIPythonPlayground.src.chapter1.q9_string_rotation import isRotated
 
 
 class TestStringRotation(TestCase):
