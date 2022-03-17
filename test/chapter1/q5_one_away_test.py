@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from CTCI.src.chapter1.q5_one_away import isOneAway
+from CTCIPythonPlayground.src.chapter1.q5_one_away import isOneAway
 
 
 class TestOneAway(TestCase):
