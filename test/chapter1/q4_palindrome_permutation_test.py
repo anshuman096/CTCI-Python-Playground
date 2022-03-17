@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from CTCI.src.chapter1.q4_palindrome_permutation import checkPalindrome
+from CTCIPythonPlayground.src.chapter1.q4_palindrome_permutation import checkPalindrome
 
 
 class TestPalindromePermutation(TestCase):
