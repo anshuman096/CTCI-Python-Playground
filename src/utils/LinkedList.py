@@ -7,6 +7,7 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
+        self.size = 0
 
     def add(self, val):
         new_node = Node(val)
@@ -17,6 +18,10 @@ class LinkedList:
             while last_node.next is not None:
                 last_node = last_node.next
             last_node.next = new_node
+        self.size += 1
+
+    def remove(self, index=-1):
+        raise NotImplementedError()
 
     def print_list(self):
         if self.head is None:
