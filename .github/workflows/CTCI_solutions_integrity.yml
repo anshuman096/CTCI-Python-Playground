@@ -2,7 +2,7 @@ name: CTCI Solutions Integrity Check
 
 on:
   push:
-    branches: [practice, ci-cd-setup]
+    branches: [master, practice, config]
   pull_request:
     branches: [master]
 
